@@ -1,0 +1,30 @@
+{
+    "dev": {
+        "companyId": 562,
+        "shopId": 564,
+        "shopCode": "BLZD001",
+        "busContsCode": "D_BUSCONTS_B2C",
+        "iframeUrl": "http://ballon-custom.dev.qs.com/#/"
+    },
+    "test": {
+        "companyId": 562,
+        "shopId": 564,
+        "shopCode": "BLZD001",
+        "busContsCode": "D_BUSCONTS_B2C",
+        "iframeUrl": "http://ballon-custom.test.qs.com/#/"
+    },
+    "test2": {
+        "companyId": 562,
+        "shopId": 564,
+        "shopCode": "BLZD001",
+        "busContsCode": "D_BUSCONTS_B2C",
+        "iframeUrl": "http://ballon-custom.test.qs.com/#/"
+    },
+    "prod": {
+        "companyId": 2,
+        "shopId": 364,
+        "shopCode": "PC001",
+        "busContsCode": "D_BUSCONTS_B2C",
+        "iframeUrl": "http://dz.chinaballon.com/ballon-custom/#/"
+    }
+}

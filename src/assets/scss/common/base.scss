@@ -1,0 +1,174 @@
+//  css初始化
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+::-webkit-input-placeholder{
+    color: $text-placeholder;
+}
+:-moz-placeholder{
+    color: $text-placeholder;
+}
+::-moz-placeholder{
+    color: $text-placeholder;
+}
+:-ms-input-placeholder{
+    color: $text-placeholder;
+}
+
+[v-cloak] {
+    display: none !important;
+}
+.red-point{
+    color: red;
+}
+input::-webkit-search-cancel-button{
+    display: none;
+}
+input[type=search]::-ms-clear{
+    display: none;
+}
+.required{
+    label{
+        &::before{
+            content: "*";
+            color: $text-warn;
+        }
+    }
+}
+
+.no-data {
+    .img-row-one {
+      margin-top: 68px;
+      text-align: center;
+      img {
+        width: 153px;
+        height: 94px;
+        display: inline-block;
+      }
+    }
+    .img-row-two {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 16px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(153, 153, 153, 1);
+    }
+    .img-row-three {
+      margin-top: 24px;
+      text-align: center;
+      margin-bottom: 67px;
+      .goReserve {
+        display: inline-block;
+        width: 96px;
+        height: 32px;
+        line-height: 32px;
+        background: rgba(245, 243, 239, 1);
+        border: 1px solid rgba(183, 159, 123, 1);
+        font-size: 12px;
+        text-align: center;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: rgba(183, 159, 123, 1);
+      }
+    }
+  
+    .content-title {
+      width: 100%;
+      height: 50px;
+      padding-left: 19px;
+      line-height: 50px;
+      background: rgba(245, 245, 245, 1);
+    }
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: inline-block;
+    .content {
+      margin-left: 120px;
+      margin-top: 53px;
+      width: 300px;
+    }
+  }
+
+.sr-bdimgshare{
+    display: none !important;
+    .bdimgshare-bg{
+        display: none !important;
+    }
+    .sr-bdimgshare .bdimgshare-content{
+        display: none !important;
+    }
+}

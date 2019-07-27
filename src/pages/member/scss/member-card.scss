@@ -1,0 +1,352 @@
+
+.mid-title {
+    width: 100%;
+    .first-row {
+        width: 100%;
+        margin: 30px 0 6px 0;
+        text-align: center;
+        font-size: 26px;
+        font-family: PingFangSC-Medium;
+        font-weight: bold;
+        color: $text-primary;
+    }
+    .second-row {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: $font-common;
+        font-family: PingFangSC-Medium;
+        font-weight: bold;
+        color: $text-secondary;
+    }
+}
+.member-center-wrap {
+    // 用户资料
+    .user-profile {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color: $bg-color-regular;
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(204, 204, 204, 1);
+        font-size: $font-small;
+        .my-card {
+            padding-left: 23px;
+            color: $text-primary;
+            font-weight: 500;
+        }
+        .buy-center {
+            margin: 9px 20px 0 0;
+            width: 110px;
+            height: 30px;
+            color: $color-white;
+            background-color: $bg-color-golden;
+            line-height:30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+            cursor: pointer;
+            
+        }
+    }
+    .card-wrap {
+        width: 100%;
+        margin-top: 52px;
+        .tip {
+            text-align: center;
+            font-size: $font-title1;
+            margin-bottom: 42px;
+        }
+    }
+}
+.goldCard {
+    color: $color-golden-hover;
+    .card-level:after {
+        background: $color-golden-hover;
+    }
+}
+.card {
+    margin-top: 20px;
+    height: 288px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px $color-thead;
+    margin-bottom: 40px;
+    .left {
+        float: left;
+        height: 100%;
+        width:62%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .card-level {
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+            padding: 8% 0 0 7%;
+            text-align: center;
+            position: relative;
+            .iconfont {
+                font-size: 60px;
+            }
+            .level-name {
+                font-size: $font-regular;
+                margin-top: -8px;
+            }
+            .card-phone{
+                margin-top: 8px;
+                font-size: $font-common;
+            }
+            .sale-price {
+                margin-top: 10px;
+                font-size: $font-h2;
+            }
+        }
+        // 特权详情
+        .card-privilege-info {
+            display: inline-block;
+            vertical-align: top;
+            width: 60%;
+            height: 100%;
+            font-size: $font-small;
+            padding-left: 65px;
+            .content {
+                height:150px;
+                overflow: auto;
+                margin-top: 25%;
+                max-width: 100%;
+                p {
+                    font-family: PingFangSC-Regular;
+                    font-weight: 400;
+                    color: $color-light-golden;
+                    line-height: 25px;
+                    font-size: $font-small;
+                }
+            }
+            .content::-webkit-scrollbar {
+                width: 2px;
+                background:#99876D;
+            }
+        }
+    }
+    .right_before:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: rgba(153, 135, 109, 1);
+        color:rgba(153, 135, 109, 1);
+        left: 0;
+        top: 25%;
+        width: 2px;
+        height: 150px;
+    }
+    .right {
+        position: relative;
+        margin-left: 62%;
+        width: 38%;
+        height: 100%;
+        box-sizing: border-box;
+        // 有效期选择
+        .validity{
+            font-size: 14px;
+            color:#B59F7F;
+            float:right;
+            text-align: right;
+            padding:60px 60px;
+        }
+        .options-wrap {
+            min-height: 100px;
+            padding: 60px 0 0 10px;
+            font-size: $font-small;
+            .explain {
+                display: inline-block;
+            }
+            .options {
+                display: inline-block;
+                margin:-30px 0 0 60px;
+                width: 80%;
+                padding-right: 66px;
+                .word {
+                    text-align: right;
+                    color: rgba(181, 159, 127, 1);
+                    margin-bottom: 12px;
+                }
+                .choose-time{
+                    min-height:100px;
+                    padding-left:46px;
+                }
+
+                .option-right {
+                    float: right;
+                    width: 80px;
+                    height: 30px;
+                    outline: none;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    background: transparent;
+                    color: $text-placeholder;
+                    border: 1px solid $text-placeholder;
+                }
+                .option-left {
+                    float: left;
+                    width: 80px;
+                    height: 30px;
+                    outline: none;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    background: transparent;
+                    color: $text-placeholder;
+                    border: 1px solid $text-placeholder;
+                }
+                .option-active {
+                    position: relative;
+                    color: $color-golden-hover;
+                    border: 1px solid $color-golden-hover;
+                }
+                .option-active:before {
+                    content: "";
+                    display: block;
+                    background: url("images/redChoose.png");
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    bottom: 0px;
+                    right: 0px;
+                }
+            }
+        }
+        .btn-buy-wrap {
+            width: 100%;
+            right: 30px;
+            bottom: 120px;
+            text-align: right;
+            font-size: $font-regular;
+            .btn-buy {
+                font-size: 20px;
+                width: 120px;
+                height: 45px;
+                outline: none;
+                border: none;
+                margin: 0px auto;
+                color: $color-white;
+                background: rgba(181, 159, 127, 1);
+                margin-right:80px;
+                cursor: pointer;
+            }
+        }
+        .btn-buy-wraps {
+            position: absolute;
+            width: 100%;
+            right: 55px;
+            bottom: 60px;
+            text-align: right;
+            font-size: $font-regular;
+        }
+    }
+}
+.options-wraps {
+    min-height: 100px;
+    padding-top: 10px;
+    font-size: $font-small;
+    .explain {
+        display: inline-block;
+    }
+    .options {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        .word {
+            width: 50px;
+            height: 100%;
+            text-align: left;
+            color: rgba(181, 159, 127, 1);
+            margin-bottom: 12px;
+        }
+        .chooseDates {
+            margin-top:-5px;
+        }
+        .option-right {
+            float: left;
+            width: 80px;
+            height: 30px;
+            outline: none;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background: transparent;
+            color: $text-placeholder;
+            border: 1px solid $text-placeholder;
+        }
+        .option-active {
+            position: relative;
+            color: $color-golden-hover;
+            border: 1px solid $color-golden-hover;
+        }
+        .option-active:before {
+            content: "";
+            display: block;
+            background: url("images/redChoose.png");
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+    .sure {
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        background-color: $bg-color-golden;
+        color: $color-white;
+        font-size: 14px;
+        text-align: center;
+        margin:0 0 20px 60px;
+    }
+}
+// .btn-buys {
+//     /deep/.el-button {
+//         background-color: $bg-color-golden;
+//         border: none;
+//         color: $color-white;
+//         font-size: 20px;
+//         width: 120px;
+//         border-radius: 0;
+//     }
+// }
+/deep/.el-button {
+    background-color: $bg-color-golden;
+    border: none;
+    color: $color-white;
+    font-size: 20px;
+    width: 120px;
+    border-radius: 0;
+}
+.emptyContents{
+    width: 153px;
+    height:100%;
+    margin:10% 43%;
+    img{
+        margin-bottom:30px;
+    }
+    div{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .card .right .options-wrap .options {
+        padding-right: 55px !important;
+        .choose-time{
+            padding-left:93px !important;
+        }
+    }
+    .content{
+        margin-top:28% !important;
+    }
+    .btn-buy{
+        margin-right:56px !important;
+    }
+    .sure{
+        margin-left:35px !important;
+    }
+   
+}

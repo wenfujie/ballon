@@ -1,0 +1,18 @@
+/*
+ * createTime：2018/11/21
+ * author：en.chen
+ * description: 提交企业团购
+ */
+
+const teamPurchase = require('../model/team-purchase');
+
+class teamPurchaseController {
+
+    // 获取积分详情
+    static async postPurchase(ctx) {
+        let res = await teamPurchase.postPurchase(ctx, ctx.params);
+        ctx.body = res
+    }
+}
+
+module.exports = teamPurchaseController;
